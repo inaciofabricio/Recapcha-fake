@@ -1,0 +1,13 @@
+<div class="col-md-4 col-md-offset-4 recaptcha">
+  <div class="col-md-3">
+	<img *ngIf="loading == 1" class="img-responsive" src="./assets/img/quadrado.png"  (click)="euNaoSouRobo()">
+	<img *ngIf="loading == 2"class="img-responsive" src="./assets/img/loading.gif">
+	<img *ngIf="loading == 3"class="img-responsive" src="./assets/img/check.png">
+  </div>
+  <div class="col-md-6" style="padding: 25px 0 0 0;">
+	Não sou um robô
+  </div>
+  <div class="col-md-3" style="display: table-cell;">
+	<img class="img-responsive" src="./assets/img/recaptchaLogo.png">
+  </div>
+</div>
